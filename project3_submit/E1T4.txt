@@ -1,0 +1,8 @@
+From the Architectural diagrma, I can identify the following problems and the solutions
+
+1. The access to the ports is easily accessible, hence the malicious scripts attempt to login and get the secret recipes was succesful
+
+The solution: To restrict the access to the instance by allowing access to the ports via the Load Balancer only and disable Secure Shell login. 
+
+2. S3 buckets aren't configured  with any encryption to protect from unuthorized users.
+The solution: To protect data with KMS service or simply configure the S3-Managed keys for all our recipe vault buckets.
